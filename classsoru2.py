@@ -1,11 +1,11 @@
 class Insan:
-    def __init__(self, Ad, Soyad, Yas, Ulke, Sehir, Yetenekler: list):
-        self.Ad = Ad
-        self.Soyad = Soyad
-        self.Yas = Yas
-        self.Ulke = Ulke
-        self.Sehir = Sehir
-        self.Yetenekler = Yetenekler
+    def __init__(self, ad, soyad, yas, ulke, sehir, yetenekler: list):
+        self.Ad = ad
+        self.Soyad = soyad
+        self.Yas = yas
+        self.Ulke = ulke
+        self.Sehir = sehir
+        self.Yetenekler = yetenekler
 
     def kisi_bilgileri(self):
         return self.Ad, self.Soyad, self.Yas, self.Ulke, self.Sehir, self.Yetenekler
