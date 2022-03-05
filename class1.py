@@ -9,18 +9,16 @@ ogrenci1 = Ogrenci()
 
 class Soru:
     def __init__(self):
-        self.yanlis = None
-        self.bos = None
-        self.puan = None
-        self.dogru = None
-
-    def net_sayisi(self):
-        self.dogru = dogru
         self.yanlis = yanlis
         self.bos = bos
+        self.puan = puan
+        self.dogru = dogru
+
+    def net_sayisi(self):
+        return self.yanlis, self.dogru, self.bos
 
     def hesapla(self):
-        self.puan = puan
+        return self.puan
 
 
 dogru = int(input("doğru sayısı : "))
