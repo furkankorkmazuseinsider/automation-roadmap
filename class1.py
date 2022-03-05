@@ -1,7 +1,7 @@
 class Ogrenci:
     ogrenciAdi = "furkan"
     ogrenciSoyadi = "korkmaz"
-    ogrenciSinifi = "5-A"
+    ogrenciSinifi = "5-B"
 
 
 ogrenci1 = Ogrenci()

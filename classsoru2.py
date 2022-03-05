@@ -14,6 +14,6 @@ class Insan:
         self.Yetenekler.append(yeni_yetenek)
 
 
-insan1 = Insan("furkan", "korkmaz", "25", "türkiye", "istanbul", ["bisiklete binmek", "python"])
+insan1 = Insan("furkan", "korkmaz", "25", "türkiye", "istanbul", ["bisiklete binmek", "python", "yabancı dil öğrenmek"])
 insan1.yetenek_ekle("ata binmek")
 print(insan1.kisi_bilgileri())
