@@ -109,7 +109,7 @@ webpush3 = SegmentPush("Purchase History", "TABLET", True, "Bir", "01/03/22", "0
 webpush3.send_push()
 webpush3.segment_push()
 
-webpush4 = PriceAlertPush(100, 0.15, "DESKTOP", True, "Üç", "01/03/22", "01/03/23", "Spanish", "Price Alert Push")
+webpush4 = PriceAlertPush(1000, 0.15, "DESKTOP", True, "Üç", "01/03/22", "01/03/23", "Spanish", "Price Alert Push")
 webpush4.send_push()
 webpush4.price_alert_push()
 
