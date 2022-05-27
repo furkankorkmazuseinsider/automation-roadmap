@@ -38,10 +38,10 @@ class LcwaikikiBasicSelenium(unittest.TestCase):
         self.assertTrue(self.driver.find_element(By.LINK_TEXT, "M"))
 
         self.wait.until(ec.element_to_be_clickable(self.ADD_TO_CART)).click()
-        self.assertTrue(self.wait.until(ec.element_to_be_clickable((By.CSS_SELECTOR, ".badge-circle"))))
+        self.assertEqual("SEPETE EKLE", self.wait.until(ec.element_to_be_clickable((By.ID, "pd_add_to_cart"))).text)
 
         self.wait.until(ec.element_to_be_clickable(self.CART_PAGE)).click()
-        self.assertTrue(self.driver.find_element(By.LINK_TEXT, "ÖDEME ADIMINA GEÇ"))
+        self.assertEqual("ÖDEME ADIMINA GEÇ", self.driver.find_element(By.LINK_TEXT, "ÖDEME ADIMINA GEÇ").text)
 
         self.wait.until(ec.element_to_be_clickable(self.MAIN_PAGE)).click()
         self.assertTrue(self.driver.find_element(By.CSS_SELECTOR, ".header__middle__left "))
