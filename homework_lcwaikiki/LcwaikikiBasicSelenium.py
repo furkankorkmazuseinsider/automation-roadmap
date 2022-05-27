@@ -32,7 +32,7 @@ class LcwaikikiBasicSelenium(unittest.TestCase):
 
         self.wait.until(ec.presence_of_all_elements_located(self.PRODUCT_PAGE))[15].click()
         self.assertIn("Beden", self.driver.find_element(By.TAG_NAME, "h4").text)
-        time.sleep(5)
+        time.sleep(4)
 
         self.wait.until(ec.element_to_be_clickable(self.CHOOSE_SIZE)).click()
         self.assertTrue(self.driver.find_element(By.LINK_TEXT, "M"))
